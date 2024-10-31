@@ -63,12 +63,28 @@
               ]
             },
             "develop": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.develop.ts"
+                }
+              ]
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "develop"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
