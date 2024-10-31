@@ -9,12 +9,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 18.19
-        - nvm use 18.19
+        - nvm install 20.12
+        - nvm use 20.12
         - npm install
     build:
       commands:
-        - nvm use 18.19
+        - nvm use 20.12
         - node -v
         - echo "La rama actual es:" $AWS_BRANCH
         - echo "La rama actual es:" $BUILD_ENV
