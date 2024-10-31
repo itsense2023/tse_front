@@ -42,7 +42,7 @@ testem.log
 Thumbs.db
 
 #Environments
-/src/environments/*
+###/src/environments/* In angular project environment is necesary
 .env*
 
 #amplify-do-not-edit-begin
