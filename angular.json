@@ -62,7 +62,7 @@
                 }
               ]
             },
-            "development": {
+            "develop": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
@@ -76,11 +76,11 @@
             "production": {
               "buildTarget": "TSE_front:build:production"
             },
-            "development": {
-              "buildTarget": "TSE_front:build:development"
+            "develop": {
+              "buildTarget": "TSE_front:build:develop"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "develop"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
